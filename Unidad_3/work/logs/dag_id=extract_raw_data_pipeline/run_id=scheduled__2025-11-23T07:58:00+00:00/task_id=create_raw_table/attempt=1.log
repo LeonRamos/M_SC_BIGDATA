@@ -1,0 +1,61 @@
+[2025-11-23T11:42:26.861+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-11-23T11:42:26.916+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: extract_raw_data_pipeline.create_raw_table scheduled__2025-11-23T07:58:00+00:00 [queued]>
+[2025-11-23T11:42:26.931+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: extract_raw_data_pipeline.create_raw_table scheduled__2025-11-23T07:58:00+00:00 [queued]>
+[2025-11-23T11:42:26.932+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2025-11-23T11:42:26.958+0000] {taskinstance.py:2888} INFO - Executing <Task(SQLExecuteQueryOperator): create_raw_table> on 2025-11-23 07:58:00+00:00
+[2025-11-23T11:42:26.985+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=96) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-11-23T11:42:26.991+0000] {standard_task_runner.py:72} INFO - Started process 98 to run task
+[2025-11-23T11:42:26.989+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'extract_raw_data_pipeline', 'create_raw_table', 'scheduled__2025-11-23T07:58:00+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/driven_data_pipeline.py', '--cfg-path', '/tmp/tmprpaqpnlx']
+[2025-11-23T11:42:26.995+0000] {standard_task_runner.py:105} INFO - Job 5: Subtask create_raw_table
+[2025-11-23T11:42:27.119+0000] {task_command.py:467} INFO - Running <TaskInstance: extract_raw_data_pipeline.create_raw_table scheduled__2025-11-23T07:58:00+00:00 [running]> on host 4b1abde5805c
+[2025-11-23T11:42:27.287+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='extract_raw_data_pipeline' AIRFLOW_CTX_TASK_ID='create_raw_table' AIRFLOW_CTX_EXECUTION_DATE='2025-11-23T07:58:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-11-23T07:58:00+00:00'
+[2025-11-23T11:42:27.289+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-11-23T11:42:27.320+0000] {sql.py:266} INFO - Executing: 
+        CREATE TABLE IF NOT EXISTS driven_raw.raw_batch_data (
+            person_name VARCHAR(100),
+            user_name VARCHAR(100),
+            email VARCHAR(100),
+            personal_number NUMERIC, 
+            birth_date VARCHAR(100), 
+            address VARCHAR(100),
+            phone VARCHAR(100), 
+            mac_address VARCHAR(100),
+            ip_address VARCHAR(100),
+            iban VARCHAR(100),
+            accessed_at TIMESTAMP,
+            session_duration INT,
+            download_speed INT,
+            upload_speed INT,
+            consumed_traffic INT,
+            unique_id VARCHAR(100)
+        );
+    
+[2025-11-23T11:42:27.334+0000] {base.py:84} INFO - Retrieving connection 'postgres_conn'
+[2025-11-23T11:42:27.359+0000] {base.py:84} INFO - Retrieving connection 'postgres_conn'
+[2025-11-23T11:42:27.365+0000] {sql.py:509} INFO - Running statement: 
+        CREATE TABLE IF NOT EXISTS driven_raw.raw_batch_data (
+            person_name VARCHAR(100),
+            user_name VARCHAR(100),
+            email VARCHAR(100),
+            personal_number NUMERIC, 
+            birth_date VARCHAR(100), 
+            address VARCHAR(100),
+            phone VARCHAR(100), 
+            mac_address VARCHAR(100),
+            ip_address VARCHAR(100),
+            iban VARCHAR(100),
+            accessed_at TIMESTAMP,
+            session_duration INT,
+            download_speed INT,
+            upload_speed INT,
+            consumed_traffic INT,
+            unique_id VARCHAR(100)
+        );
+    , parameters: None
+[2025-11-23T11:42:27.396+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-11-23T11:42:27.396+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=extract_raw_data_pipeline, task_id=create_raw_table, run_id=scheduled__2025-11-23T07:58:00+00:00, execution_date=20251123T075800, start_date=20251123T114226, end_date=20251123T114227
+[2025-11-23T11:42:27.468+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-11-23T11:42:27.515+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-11-23T11:42:27.518+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

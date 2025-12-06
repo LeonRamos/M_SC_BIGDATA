@@ -1,0 +1,160 @@
+[2025-11-23T10:05:58.949+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-11-23T10:05:58.974+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: extract_raw_data_pipeline.create_raw_table_task scheduled__2025-11-22T07:00:00+00:00 [queued]>
+[2025-11-23T10:05:58.985+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: extract_raw_data_pipeline.create_raw_table_task scheduled__2025-11-22T07:00:00+00:00 [queued]>
+[2025-11-23T10:05:58.993+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2025-11-23T10:05:59.012+0000] {taskinstance.py:2888} INFO - Executing <Task(PostgresOperator): create_raw_table_task> on 2025-11-22 07:00:00+00:00
+[2025-11-23T10:05:59.019+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=89) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-11-23T10:05:59.020+0000] {standard_task_runner.py:72} INFO - Started process 90 to run task
+[2025-11-23T10:05:59.021+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'extract_raw_data_pipeline', 'create_raw_table_task', 'scheduled__2025-11-22T07:00:00+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/driven_data_pipeline.py', '--cfg-path', '/tmp/tmpbybxktm_']
+[2025-11-23T10:05:59.023+0000] {standard_task_runner.py:105} INFO - Job 5: Subtask create_raw_table_task
+[2025-11-23T10:05:59.091+0000] {task_command.py:467} INFO - Running <TaskInstance: extract_raw_data_pipeline.create_raw_table_task scheduled__2025-11-22T07:00:00+00:00 [running]> on host 49f68414808b
+[2025-11-23T10:05:59.191+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='extract_raw_data_pipeline' AIRFLOW_CTX_TASK_ID='create_raw_table_task' AIRFLOW_CTX_EXECUTION_DATE='2025-11-22T07:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-11-22T07:00:00+00:00'
+[2025-11-23T10:05:59.193+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-11-23T10:05:59.208+0000] {sql.py:266} INFO - Executing: 
+            DROP TABLE IF EXISTS raw.data;
+            CREATE TABLE raw.data (
+                id INT,
+                value VARCHAR(100),
+                created_at TIMESTAMP
+            );
+        
+[2025-11-23T10:05:59.220+0000] {base.py:84} INFO - Retrieving connection 'postgres_conn'
+[2025-11-23T10:05:59.239+0000] {base.py:84} INFO - Retrieving connection 'postgres_conn'
+[2025-11-23T10:05:59.245+0000] {sql.py:509} INFO - Running statement: 
+            DROP TABLE IF EXISTS raw.data;
+            CREATE TABLE raw.data (
+                id INT,
+                value VARCHAR(100),
+                created_at TIMESTAMP
+            );
+        , parameters: None
+[2025-11-23T10:05:59.270+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-11-23T10:05:59.270+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=extract_raw_data_pipeline, task_id=create_raw_table_task, run_id=scheduled__2025-11-22T07:00:00+00:00, execution_date=20251122T070000, start_date=20251123T100558, end_date=20251123T100559
+[2025-11-23T10:05:59.291+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-11-23T10:05:59.305+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/models/baseoperator.py:1378: AirflowProviderDeprecationWarning: Call to deprecated class PostgresOperator. (Please use `***.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.Also, you can provide `hook_params={'schema': <database>}`.)
+  result = cls.__new__(cls)
+
+[2025-11-23T10:05:59.329+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-11-23T10:05:59.331+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-11-23T10:47:57.453+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-11-23T10:47:57.475+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: extract_raw_data_pipeline.create_raw_table_task scheduled__2025-11-22T07:00:00+00:00 [queued]>
+[2025-11-23T10:47:57.485+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: extract_raw_data_pipeline.create_raw_table_task scheduled__2025-11-22T07:00:00+00:00 [queued]>
+[2025-11-23T10:47:57.486+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2025-11-23T10:47:57.502+0000] {taskinstance.py:2888} INFO - Executing <Task(PostgresOperator): create_raw_table_task> on 2025-11-22 07:00:00+00:00
+[2025-11-23T10:47:57.508+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=90) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-11-23T10:47:57.509+0000] {standard_task_runner.py:72} INFO - Started process 91 to run task
+[2025-11-23T10:47:57.510+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'extract_raw_data_pipeline', 'create_raw_table_task', 'scheduled__2025-11-22T07:00:00+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/driven_data_pipeline.py', '--cfg-path', '/tmp/tmpvbo0q1us']
+[2025-11-23T10:47:57.511+0000] {standard_task_runner.py:105} INFO - Job 6: Subtask create_raw_table_task
+[2025-11-23T10:47:57.569+0000] {task_command.py:467} INFO - Running <TaskInstance: extract_raw_data_pipeline.create_raw_table_task scheduled__2025-11-22T07:00:00+00:00 [running]> on host 2154dd3c667f
+[2025-11-23T10:47:57.674+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='extract_raw_data_pipeline' AIRFLOW_CTX_TASK_ID='create_raw_table_task' AIRFLOW_CTX_EXECUTION_DATE='2025-11-22T07:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-11-22T07:00:00+00:00'
+[2025-11-23T10:47:57.675+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-11-23T10:47:57.692+0000] {sql.py:266} INFO - Executing: 
+            DROP TABLE IF EXISTS raw.data;
+            CREATE TABLE raw.data (
+                id INT,
+                value VARCHAR(100),
+                created_at TIMESTAMP
+            );
+        
+[2025-11-23T10:47:57.704+0000] {base.py:84} INFO - Retrieving connection 'postgres_conn'
+[2025-11-23T10:47:57.716+0000] {base.py:84} INFO - Retrieving connection 'postgres_conn'
+[2025-11-23T10:47:57.720+0000] {sql.py:509} INFO - Running statement: 
+            DROP TABLE IF EXISTS raw.data;
+            CREATE TABLE raw.data (
+                id INT,
+                value VARCHAR(100),
+                created_at TIMESTAMP
+            );
+        , parameters: None
+[2025-11-23T10:47:57.744+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-11-23T10:47:57.744+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=extract_raw_data_pipeline, task_id=create_raw_table_task, run_id=scheduled__2025-11-22T07:00:00+00:00, execution_date=20251122T070000, start_date=20251123T104757, end_date=20251123T104757
+[2025-11-23T10:47:57.775+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-11-23T10:47:57.788+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/models/baseoperator.py:1378: AirflowProviderDeprecationWarning: Call to deprecated class PostgresOperator. (Please use `***.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.Also, you can provide `hook_params={'schema': <database>}`.)
+  result = cls.__new__(cls)
+
+[2025-11-23T10:47:57.810+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-11-23T10:47:57.812+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-11-23T11:00:53.972+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-11-23T11:00:54.003+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: extract_raw_data_pipeline.create_raw_table_task scheduled__2025-11-22T07:00:00+00:00 [queued]>
+[2025-11-23T11:00:54.018+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: extract_raw_data_pipeline.create_raw_table_task scheduled__2025-11-22T07:00:00+00:00 [queued]>
+[2025-11-23T11:00:54.019+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2025-11-23T11:00:54.042+0000] {taskinstance.py:2888} INFO - Executing <Task(PostgresOperator): create_raw_table_task> on 2025-11-22 07:00:00+00:00
+[2025-11-23T11:00:54.049+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=96) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-11-23T11:00:54.052+0000] {standard_task_runner.py:72} INFO - Started process 97 to run task
+[2025-11-23T11:00:54.052+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'extract_raw_data_pipeline', 'create_raw_table_task', 'scheduled__2025-11-22T07:00:00+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/driven_data_pipeline.py', '--cfg-path', '/tmp/tmpu86wof9_']
+[2025-11-23T11:00:54.054+0000] {standard_task_runner.py:105} INFO - Job 5: Subtask create_raw_table_task
+[2025-11-23T11:00:54.150+0000] {task_command.py:467} INFO - Running <TaskInstance: extract_raw_data_pipeline.create_raw_table_task scheduled__2025-11-22T07:00:00+00:00 [running]> on host f78c98b58354
+[2025-11-23T11:00:54.281+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='extract_raw_data_pipeline' AIRFLOW_CTX_TASK_ID='create_raw_table_task' AIRFLOW_CTX_EXECUTION_DATE='2025-11-22T07:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-11-22T07:00:00+00:00'
+[2025-11-23T11:00:54.283+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-11-23T11:00:54.309+0000] {sql.py:266} INFO - Executing: 
+            DROP TABLE IF EXISTS raw.data;
+            CREATE TABLE raw.data (
+                id INT,
+                value VARCHAR(100),
+                created_at TIMESTAMP
+            );
+        
+[2025-11-23T11:00:54.324+0000] {base.py:84} INFO - Retrieving connection 'postgres_conn'
+[2025-11-23T11:00:54.342+0000] {base.py:84} INFO - Retrieving connection 'postgres_conn'
+[2025-11-23T11:00:54.350+0000] {sql.py:509} INFO - Running statement: 
+            DROP TABLE IF EXISTS raw.data;
+            CREATE TABLE raw.data (
+                id INT,
+                value VARCHAR(100),
+                created_at TIMESTAMP
+            );
+        , parameters: None
+[2025-11-23T11:00:54.386+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-11-23T11:00:54.387+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=extract_raw_data_pipeline, task_id=create_raw_table_task, run_id=scheduled__2025-11-22T07:00:00+00:00, execution_date=20251122T070000, start_date=20251123T110054, end_date=20251123T110054
+[2025-11-23T11:00:54.444+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-11-23T11:00:54.466+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/models/baseoperator.py:1378: AirflowProviderDeprecationWarning: Call to deprecated class PostgresOperator. (Please use `***.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.Also, you can provide `hook_params={'schema': <database>}`.)
+  result = cls.__new__(cls)
+
+[2025-11-23T11:00:54.510+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-11-23T11:00:54.512+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-11-23T11:24:36.715+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-11-23T11:24:36.740+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: extract_raw_data_pipeline.create_raw_table_task scheduled__2025-11-22T07:00:00+00:00 [queued]>
+[2025-11-23T11:24:36.750+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: extract_raw_data_pipeline.create_raw_table_task scheduled__2025-11-22T07:00:00+00:00 [queued]>
+[2025-11-23T11:24:36.751+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2025-11-23T11:24:36.767+0000] {taskinstance.py:2888} INFO - Executing <Task(PostgresOperator): create_raw_table_task> on 2025-11-22 07:00:00+00:00
+[2025-11-23T11:24:36.773+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=88) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-11-23T11:24:36.775+0000] {standard_task_runner.py:72} INFO - Started process 89 to run task
+[2025-11-23T11:24:36.775+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'extract_raw_data_pipeline', 'create_raw_table_task', 'scheduled__2025-11-22T07:00:00+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/driven_data_pipeline.py', '--cfg-path', '/tmp/tmpw18dexfl']
+[2025-11-23T11:24:36.777+0000] {standard_task_runner.py:105} INFO - Job 5: Subtask create_raw_table_task
+[2025-11-23T11:24:36.835+0000] {task_command.py:467} INFO - Running <TaskInstance: extract_raw_data_pipeline.create_raw_table_task scheduled__2025-11-22T07:00:00+00:00 [running]> on host 1b6a13258dce
+[2025-11-23T11:24:36.931+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='extract_raw_data_pipeline' AIRFLOW_CTX_TASK_ID='create_raw_table_task' AIRFLOW_CTX_EXECUTION_DATE='2025-11-22T07:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-11-22T07:00:00+00:00'
+[2025-11-23T11:24:36.935+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-11-23T11:24:36.954+0000] {sql.py:266} INFO - Executing: 
+            DROP TABLE IF EXISTS raw.data;
+            CREATE TABLE raw.data (
+                id INT,
+                value VARCHAR(100),
+                created_at TIMESTAMP
+            );
+        
+[2025-11-23T11:24:36.966+0000] {base.py:84} INFO - Retrieving connection 'postgres_conn'
+[2025-11-23T11:24:36.982+0000] {base.py:84} INFO - Retrieving connection 'postgres_conn'
+[2025-11-23T11:24:36.987+0000] {sql.py:509} INFO - Running statement: 
+            DROP TABLE IF EXISTS raw.data;
+            CREATE TABLE raw.data (
+                id INT,
+                value VARCHAR(100),
+                created_at TIMESTAMP
+            );
+        , parameters: None
+[2025-11-23T11:24:37.010+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-11-23T11:24:37.011+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=extract_raw_data_pipeline, task_id=create_raw_table_task, run_id=scheduled__2025-11-22T07:00:00+00:00, execution_date=20251122T070000, start_date=20251123T112436, end_date=20251123T112437
+[2025-11-23T11:24:37.047+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-11-23T11:24:37.062+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/models/baseoperator.py:1378: AirflowProviderDeprecationWarning: Call to deprecated class PostgresOperator. (Please use `***.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.Also, you can provide `hook_params={'schema': <database>}`.)
+  result = cls.__new__(cls)
+
+[2025-11-23T11:24:37.091+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-11-23T11:24:37.093+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

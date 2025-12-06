@@ -1,0 +1,88 @@
+[2025-11-24T11:43:51.916+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-11-24T11:43:51.939+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: extract_raw_data_pipeline.cleanup_task scheduled__2025-11-23T07:00:00+00:00 [queued]>
+[2025-11-24T11:43:51.949+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: extract_raw_data_pipeline.cleanup_task scheduled__2025-11-23T07:00:00+00:00 [queued]>
+[2025-11-24T11:43:51.950+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2025-11-24T11:43:51.968+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): cleanup_task> on 2025-11-23 07:00:00+00:00
+[2025-11-24T11:43:51.982+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=112) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-11-24T11:43:51.984+0000] {standard_task_runner.py:72} INFO - Started process 113 to run task
+[2025-11-24T11:43:51.984+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'extract_raw_data_pipeline', 'cleanup_task', 'scheduled__2025-11-23T07:00:00+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/driven_data_pipeline.py', '--cfg-path', '/tmp/tmp0hua561m']
+[2025-11-24T11:43:51.986+0000] {standard_task_runner.py:105} INFO - Job 8: Subtask cleanup_task
+[2025-11-24T11:43:52.045+0000] {task_command.py:467} INFO - Running <TaskInstance: extract_raw_data_pipeline.cleanup_task scheduled__2025-11-23T07:00:00+00:00 [running]> on host 30cb8f999222
+[2025-11-24T11:43:52.139+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='extract_raw_data_pipeline' AIRFLOW_CTX_TASK_ID='cleanup_task' AIRFLOW_CTX_EXECUTION_DATE='2025-11-23T07:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-11-23T07:00:00+00:00'
+[2025-11-24T11:43:52.142+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-11-24T11:43:52.162+0000] {driven_data_pipeline.py:21} INFO - Limpiando archivos temporales...
+[2025-11-24T11:43:52.163+0000] {driven_data_pipeline.py:23} INFO - Limpieza completada.
+[2025-11-24T11:43:52.163+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-11-24T11:43:52.178+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-11-24T11:43:52.179+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=extract_raw_data_pipeline, task_id=cleanup_task, run_id=scheduled__2025-11-23T07:00:00+00:00, execution_date=20251123T070000, start_date=20251124T114351, end_date=20251124T114352
+[2025-11-24T11:43:52.212+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-11-24T11:43:52.230+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-11-24T11:43:52.232+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-11-24T12:12:57.446+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-11-24T12:12:57.485+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: extract_raw_data_pipeline.cleanup_task scheduled__2025-11-23T07:00:00+00:00 [queued]>
+[2025-11-24T12:12:57.501+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: extract_raw_data_pipeline.cleanup_task scheduled__2025-11-23T07:00:00+00:00 [queued]>
+[2025-11-24T12:12:57.502+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2025-11-24T12:12:57.522+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): cleanup_task> on 2025-11-23 07:00:00+00:00
+[2025-11-24T12:12:57.529+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=142) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-11-24T12:12:57.531+0000] {standard_task_runner.py:72} INFO - Started process 143 to run task
+[2025-11-24T12:12:57.531+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'extract_raw_data_pipeline', 'cleanup_task', 'scheduled__2025-11-23T07:00:00+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/driven_data_pipeline.py', '--cfg-path', '/tmp/tmprtwyutq1']
+[2025-11-24T12:12:57.533+0000] {standard_task_runner.py:105} INFO - Job 8: Subtask cleanup_task
+[2025-11-24T12:12:57.601+0000] {task_command.py:467} INFO - Running <TaskInstance: extract_raw_data_pipeline.cleanup_task scheduled__2025-11-23T07:00:00+00:00 [running]> on host e428c2212d9f
+[2025-11-24T12:12:57.715+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='extract_raw_data_pipeline' AIRFLOW_CTX_TASK_ID='cleanup_task' AIRFLOW_CTX_EXECUTION_DATE='2025-11-23T07:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-11-23T07:00:00+00:00'
+[2025-11-24T12:12:57.717+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-11-24T12:12:57.736+0000] {driven_data_pipeline.py:19} INFO - Limpiando archivos temporales...
+[2025-11-24T12:12:57.737+0000] {driven_data_pipeline.py:21} INFO - Limpieza completada.
+[2025-11-24T12:12:57.737+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-11-24T12:12:57.752+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-11-24T12:12:57.753+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=extract_raw_data_pipeline, task_id=cleanup_task, run_id=scheduled__2025-11-23T07:00:00+00:00, execution_date=20251123T070000, start_date=20251124T121257, end_date=20251124T121257
+[2025-11-24T12:12:57.797+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-11-24T12:12:57.821+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-11-24T12:12:57.823+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-11-24T12:33:37.655+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-11-24T12:33:37.683+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: extract_raw_data_pipeline.cleanup_task scheduled__2025-11-23T07:00:00+00:00 [queued]>
+[2025-11-24T12:33:37.696+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: extract_raw_data_pipeline.cleanup_task scheduled__2025-11-23T07:00:00+00:00 [queued]>
+[2025-11-24T12:33:37.697+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2025-11-24T12:33:37.718+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): cleanup_task> on 2025-11-23 07:00:00+00:00
+[2025-11-24T12:33:37.726+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=101) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-11-24T12:33:37.728+0000] {standard_task_runner.py:72} INFO - Started process 102 to run task
+[2025-11-24T12:33:37.729+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'extract_raw_data_pipeline', 'cleanup_task', 'scheduled__2025-11-23T07:00:00+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/driven_data_pipeline.py', '--cfg-path', '/tmp/tmp9l36tzt1']
+[2025-11-24T12:33:37.731+0000] {standard_task_runner.py:105} INFO - Job 8: Subtask cleanup_task
+[2025-11-24T12:33:37.817+0000] {task_command.py:467} INFO - Running <TaskInstance: extract_raw_data_pipeline.cleanup_task scheduled__2025-11-23T07:00:00+00:00 [running]> on host 652e43bf9a94
+[2025-11-24T12:33:37.946+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='extract_raw_data_pipeline' AIRFLOW_CTX_TASK_ID='cleanup_task' AIRFLOW_CTX_EXECUTION_DATE='2025-11-23T07:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-11-23T07:00:00+00:00'
+[2025-11-24T12:33:37.947+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-11-24T12:33:37.969+0000] {driven_data_pipeline.py:19} INFO - Limpiando archivos temporales...
+[2025-11-24T12:33:37.970+0000] {driven_data_pipeline.py:21} INFO - Limpieza completada.
+[2025-11-24T12:33:37.970+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-11-24T12:33:37.987+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-11-24T12:33:37.988+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=extract_raw_data_pipeline, task_id=cleanup_task, run_id=scheduled__2025-11-23T07:00:00+00:00, execution_date=20251123T070000, start_date=20251124T123337, end_date=20251124T123337
+[2025-11-24T12:33:38.039+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-11-24T12:33:38.064+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-11-24T12:33:38.066+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-11-24T13:12:38.893+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-11-24T13:12:38.919+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: extract_raw_data_pipeline.cleanup_task scheduled__2025-11-23T07:00:00+00:00 [queued]>
+[2025-11-24T13:12:38.929+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: extract_raw_data_pipeline.cleanup_task scheduled__2025-11-23T07:00:00+00:00 [queued]>
+[2025-11-24T13:12:38.929+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2025-11-24T13:12:38.945+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): cleanup_task> on 2025-11-23 07:00:00+00:00
+[2025-11-24T13:12:38.952+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=169) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-11-24T13:12:38.954+0000] {standard_task_runner.py:72} INFO - Started process 170 to run task
+[2025-11-24T13:12:38.954+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'extract_raw_data_pipeline', 'cleanup_task', 'scheduled__2025-11-23T07:00:00+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/driven_data_pipeline.py', '--cfg-path', '/tmp/tmpej1rfi9_']
+[2025-11-24T13:12:38.955+0000] {standard_task_runner.py:105} INFO - Job 9: Subtask cleanup_task
+[2025-11-24T13:12:39.010+0000] {task_command.py:467} INFO - Running <TaskInstance: extract_raw_data_pipeline.cleanup_task scheduled__2025-11-23T07:00:00+00:00 [running]> on host 94e0b492a3f2
+[2025-11-24T13:12:39.101+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='extract_raw_data_pipeline' AIRFLOW_CTX_TASK_ID='cleanup_task' AIRFLOW_CTX_EXECUTION_DATE='2025-11-23T07:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-11-23T07:00:00+00:00'
+[2025-11-24T13:12:39.102+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-11-24T13:12:39.119+0000] {driven_data_pipeline.py:19} INFO - Limpiando archivos temporales...
+[2025-11-24T13:12:39.120+0000] {driven_data_pipeline.py:21} INFO - Limpieza completada.
+[2025-11-24T13:12:39.120+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-11-24T13:12:39.133+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-11-24T13:12:39.134+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=extract_raw_data_pipeline, task_id=cleanup_task, run_id=scheduled__2025-11-23T07:00:00+00:00, execution_date=20251123T070000, start_date=20251124T131238, end_date=20251124T131239
+[2025-11-24T13:12:39.179+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-11-24T13:12:39.208+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-11-24T13:12:39.211+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

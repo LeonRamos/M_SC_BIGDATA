@@ -1,0 +1,2 @@
+[2025-11-23T11:34:44.707+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-11-23T11:34:46.329+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: extract_raw_data_pipeline.run_dbt_trusted_task scheduled__2025-11-22T07:00:00+00:00 [queued]>

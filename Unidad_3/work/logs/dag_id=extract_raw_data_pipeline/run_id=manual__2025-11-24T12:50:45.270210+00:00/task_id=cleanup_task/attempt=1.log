@@ -1,0 +1,22 @@
+[2025-11-24T12:58:52.265+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-11-24T12:58:52.616+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: extract_raw_data_pipeline.cleanup_task manual__2025-11-24T12:50:45.270210+00:00 [queued]>
+[2025-11-24T12:58:52.711+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: extract_raw_data_pipeline.cleanup_task manual__2025-11-24T12:50:45.270210+00:00 [queued]>
+[2025-11-24T12:58:52.713+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2025-11-24T12:58:52.833+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): cleanup_task> on 2025-11-24 12:50:45.270210+00:00
+[2025-11-24T12:58:53.090+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=154) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-11-24T12:58:53.112+0000] {standard_task_runner.py:72} INFO - Started process 155 to run task
+[2025-11-24T12:58:53.115+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'extract_raw_data_pipeline', 'cleanup_task', 'manual__2025-11-24T12:50:45.270210+00:00', '--job-id', '17', '--raw', '--subdir', 'DAGS_FOLDER/driven_data_pipeline.py', '--cfg-path', '/tmp/tmpnfwasupx']
+[2025-11-24T12:58:53.120+0000] {standard_task_runner.py:105} INFO - Job 17: Subtask cleanup_task
+[2025-11-24T12:58:53.702+0000] {task_command.py:467} INFO - Running <TaskInstance: extract_raw_data_pipeline.cleanup_task manual__2025-11-24T12:50:45.270210+00:00 [running]> on host e7d09e04a94a
+[2025-11-24T12:58:55.094+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='extract_raw_data_pipeline' AIRFLOW_CTX_TASK_ID='cleanup_task' AIRFLOW_CTX_EXECUTION_DATE='2025-11-24T12:50:45.270210+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-11-24T12:50:45.270210+00:00'
+[2025-11-24T12:58:55.104+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-11-24T12:58:55.283+0000] {driven_data_pipeline.py:19} INFO - Limpiando archivos temporales...
+[2025-11-24T12:58:55.287+0000] {driven_data_pipeline.py:21} INFO - Limpieza completada.
+[2025-11-24T12:58:55.289+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-11-24T12:58:55.389+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-11-24T12:58:55.393+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=extract_raw_data_pipeline, task_id=cleanup_task, run_id=manual__2025-11-24T12:50:45.270210+00:00, execution_date=20251124T125045, start_date=20251124T125852, end_date=20251124T125855
+[2025-11-24T12:58:55.524+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-11-24T12:58:55.744+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-11-24T12:58:55.749+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
