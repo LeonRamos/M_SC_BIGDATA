@@ -19,6 +19,8 @@
 
 <img width="568" height="364" alt="Aplicativos Instalados" src="https://github.com/user-attachments/assets/99a6b5b2-e10b-4ba9-a706-42d17279a00c" />
 
+https://whiteboard.cloud.microsoft/me/whiteboards/72c4324a-6680-4d7a-a6ac-693d6fabe591
+
 ---
 
 > Empresa BoostoneData
