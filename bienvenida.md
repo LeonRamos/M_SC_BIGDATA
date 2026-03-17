@@ -48,11 +48,11 @@ Las prácticas están diseñadas para acompañar cada sección del curso y se en
 
 ## Temario General
 
-- Fundamentos y Ecosistema de Big Data
-- Adquisición, Ingesta y Procesamiento de Datos
-- Almacenamiento y Gestión Escalable de Datos
-- Análisis, Modelado y Machine Learning en Big Data
-- Visualización, Implementación y Proyectos
+- [Fundamentos y Ecosistema de Big Data](/Unidad_1/README.md)
+- [Adquisición, Ingesta y Procesamiento de Datos](/Unidad_2/README.md)
+- [Almacenamiento y Gestión Escalable de Datos](/Unidad_3/README.md)
+- [Análisis, Modelado y Machine Learning en Big Data](/Unidad_4/README.md)
+- [Visualización, Implementación y Proyectos](/Unidad_5/README.md)
 
 ---
 

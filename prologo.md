@@ -27,9 +27,7 @@ Bienvenidos al laboratorio donde el dato deja de ser ruido para convertirse en c
 *Tecnológico Superior de Jalisco Zapopan | TecNM*
 2025-1
 
+                                          
 ---
-<p align="right">
-  <a href="/bienvenida.md>
-    <img src="/assets/arrow.png" width="75" height="75" alt="Índice">
-  </a>
-</p>
+
+-----------------------------------------------------------------------------------> [NEXT](/bienvenida.md)
