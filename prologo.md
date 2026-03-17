@@ -1,6 +1,8 @@
-
-
----
+<p align="right">
+  <a href="/prologo.md>
+    <img src="/Assets/arrow.png" width="75" height="75" alt="Índice">
+  </a>
+</p>
 
 ## Prólogo
 
@@ -24,10 +26,4 @@ Este manual no es solo una guía de pasos a seguir; es un desafío a la capacida
 Bienvenidos al laboratorio donde el dato deja de ser ruido para convertirse en conocimiento. La meta es clara: **aprender haciendo**, construyendo hoy las arquitecturas que sostendrán las decisiones del mañana.
 
 **Mtro. León Miguel Ramos Corchado**
-*Tecnológico Superior de Jalisco Zapopan | TecNM*
-2025-1
-
-                                          
----
-
------------------------------------------------------------------------------------> [NEXT](/bienvenida.md)
+*Tecnológico Superior de Jalisco Zapopan | TecMM 2025_2*
