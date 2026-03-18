@@ -17,7 +17,7 @@ Repositorio de prácticas del tema **Big Data**, con ejemplos de procesamiento p
 
 <p align="right">
   <a href="//Unidad_1/src/manipulación_ficheros.md">
-    <img src="/assets/arrow.png" width="75" height="75" alt="Índice">
+    <img src="/Assets/arrow.png" width="75" height="75" alt="Índice">
   </a>
 </p>
 
