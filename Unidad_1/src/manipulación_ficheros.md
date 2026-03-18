@@ -289,6 +289,6 @@ nuevo.write('subvenciones_reorganizado.xml')
 ***
 <p align="right">
   <a href="/Unidad_2/src/Scrapping.md">
-    <img src="/assets/arrow.png" width="75" height="75" alt="Índice">
+    <img src="/Assets/arrow.png" width="75" height="75" alt="Índice">
   </a>
 </p>

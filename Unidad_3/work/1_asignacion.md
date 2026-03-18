@@ -446,6 +446,6 @@ Como el pipeline Airflow corre diariamente a las 07:00 AM según la programació
 ***
 <p align="right">
   <a href="/Unidad_4/work/1_asignacion.md">
-    <img src="/assets/arrow.png" width="75" height="75" alt="Índice">
+    <img src="/Assets/arrow.png" width="75" height="75" alt="Índice">
   </a>
 </p>

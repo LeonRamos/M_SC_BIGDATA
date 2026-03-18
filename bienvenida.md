@@ -1,6 +1,6 @@
 <p align="right">
   <a href="/prologo.md">
-    <img src="/assets/arrow.png" width="75" height="75" alt="Índice">
+    <img src="/Assets/arrow.png" width="75" height="75" alt="Índice">
   </a>
 </p>
 # M_SC_BIGDATA
@@ -103,7 +103,7 @@ Este repositorio y sus materiales se publican bajo la licencia [Creative Commons
 
 <p align="right">
   <a href="/prologo.md">
-    <img src="/assets/arrow.png" width="75" height="75" alt="Índice">
+    <img src="/Assets/arrow.png" width="75" height="75" alt="Índice">
   </a>
 </p>
 
