@@ -444,3 +444,8 @@ Utiliza las consultas del Unidad_2 modificando solo el nombre del esquema para e
 Como el pipeline Airflow corre diariamente a las 07:00 AM según la programación, los datos frescos están disponibles antes de las 08:00 AM todos los días.
 
 ***
+<p align="right">
+  <a href="/Unidad_4/work/1_asignacion.md">
+    <img src="/assets/arrow.png" width="75" height="75" alt="Índice">
+  </a>
+</p>

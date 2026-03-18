@@ -325,3 +325,9 @@ LIMIT
 ## Note
 **Delete** all deployed resources after finishing the Unit as AWS Cloud resources are not free!
 ![Image 4.37](/Assets/image_4.37.PNG)
+
+<p align="right">
+  <a href="/indice_practicas.md">
+    <img src="/assets/arrow.png" width="75" height="75" alt="Índice">
+  </a>
+</p>

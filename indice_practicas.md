@@ -8,18 +8,16 @@ Repositorio de prácticas del tema **Big Data**, con ejemplos de procesamiento p
 
 ## Índice de prácticas
 
-1. [Manipulación de ficheros en Python](/Unidad_1/work/1_asignacion.md)
+1. [Manipulación de ficheros en Python](/Unidad_1/src/manipulación_ficheros.md)
 2. [Práctica de Scraping con Selenium, Python y Chrome](/Unidad_2/src/Scrapping.md)
 3. [Procesamiento por lotes - Desarrollo Local](/Unidad_2/work/1_asignacion.md)
 4. [Procesamiento por lotes - Pipeline local](/Unidad_3/work/1_asignacion.md)
 5. [Procesamiento por lotes - Nube: Pipeline desde la consola](/Unidad_4/work/1_asignacion.md)
 6. [Procesamiento por lotes - Nube: Pipeline automatizado](/Unidad_4/work/1_asignacion.md)
 
-
-
 <p align="right">
-  <a href="/prologo.md>
-    <img src="/Assets/arrow.png" width="75" height="75" alt="Índice">
+  <a href="//Unidad_1/src/manipulación_ficheros.md">
+    <img src="/assets/arrow.png" width="75" height="75" alt="Índice">
   </a>
 </p>
 

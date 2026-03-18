@@ -287,3 +287,8 @@ nuevo.write('subvenciones_reorganizado.xml')
 - Utiliza Python 3 y las versiones recomendadas de las librerías para compatibilidad completa.
 
 ***
+<p align="right">
+  <a href="/Unidad_2/src/Scrapping.md">
+    <img src="/assets/arrow.png" width="75" height="75" alt="Índice">
+  </a>
+</p>

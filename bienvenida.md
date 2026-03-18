@@ -1,3 +1,8 @@
+<p align="right">
+  <a href="/prologo.md">
+    <img src="/assets/arrow.png" width="75" height="75" alt="Índice">
+  </a>
+</p>
 # M_SC_BIGDATA
 
 [![Ciencia de Datos](https://img.shields.io/badge/Ciencia%20de%20Datos-Big%20Data-brightgreen)]()
@@ -95,6 +100,12 @@ Este repositorio y sus materiales se publican bajo la licencia [Creative Commons
 ---
 
 **¡Bienvenido(a) al curso y mucho éxito en tu aprendizaje y colaboración con Big Data!**
+
+<p align="right">
+  <a href="/prologo.md">
+    <img src="/assets/arrow.png" width="75" height="75" alt="Índice">
+  </a>
+</p>
 
 ## Contacto y apoyo:
 

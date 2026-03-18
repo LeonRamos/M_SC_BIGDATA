@@ -655,3 +655,8 @@ LIMIT
     10
 ```
 ![Imagen 2.24](/Assets/image_2.24.PNG)
+<p align="right">
+  <a href="/Unidad_3/work/1_asignacion.md">
+    <img src="/assets/arrow.png" width="75" height="75" alt="Índice">
+  </a>
+</p>
